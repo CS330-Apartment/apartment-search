@@ -1,7 +1,6 @@
 #sidebar a, h1 {
     padding: 5%;
     text-decoration: none;
-    background-color: black;
 }
 
 #sidebar a {
@@ -12,10 +11,6 @@
     padding-top: 3%;
 }
 
-aside .selected {
-    border-left-style: solid;
-    border-left-color: green;
-}
 
 #sidebar a:hover {
     filter: brightness(3);

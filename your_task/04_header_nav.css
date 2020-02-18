@@ -34,6 +34,7 @@ header a {
 nav {
     flex-direction: row;
     text-decoration: none;
+    justify-content: center;
 }
 
 nav a {
@@ -41,7 +42,7 @@ nav a {
     padding: 5px;
     margin: 10px;
     height: 50px;
-    width: 100px;
+    width: 200px;
     font-size: 14px;
     justify-content: center;
     text-decoration: none;
@@ -50,13 +51,9 @@ nav a {
 
 nav .selected {
     border-bottom-style: solid;
-    border-bottom-color: green;
+    border-bottom-color: red;
 }
-nav a:hover {
-    filter: brightness(300%);
-    border-bottom-style: solid;
-    border-bottom-color: green;
-}
+
 
 header a:hover {
     filter: brightness(300%);
