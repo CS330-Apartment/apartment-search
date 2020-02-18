@@ -1,0 +1,22 @@
+#sidebar a, h1 {
+    padding: 5%;
+    text-decoration: none;
+    background-color: black;
+}
+
+#sidebar a {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+aside .selected {
+    border-left-style: solid;
+    border-left-color: green;
+}
+
+#sidebar a:hover {
+    filter: brightness(3);
+}
