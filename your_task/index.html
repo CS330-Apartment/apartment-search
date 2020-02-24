@@ -8,6 +8,65 @@
         <link rel="stylesheet" href="05_artists.css">
         <link rel="stylesheet" href="06_player.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .dropbtn {
+                background-color: red;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #3e8e41;
+            }
+
+            #myInput {
+                box-sizing: border-box;
+                background-image: url('searchicon.png');
+                background-position: 14px 12px;
+                background-repeat: no-repeat;
+                font-size: 16px;
+                padding: 14px 20px 12px 45px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            #myInput:focus {
+                outline: 3px solid #ddd;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f6f6f6;
+                min-width: 230px;
+                overflow: auto;
+                border: 1px solid #ddd;
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown a:hover {
+                background-color: #ddd;
+            }
+
+            .show {
+                display: block;
+            }
+        </style>
     </head>
     <body id="container">
         <aside id="sidebar">
@@ -16,24 +75,63 @@
                 <i class="fas fa-home"></i>
                 Housing101
             </h1>
-            <a href="#">
-                <!--TODO: Font Awesome Icon Here -->
-                <i class="fas fa-home"></i>
-                Home
-            </a>
-            <a href="#">
-                <!--TODO: Font Awesome Icon Here -->
-                <i class="fas fa-search"></i>
-                Search
-            </a>
-            <a class="selected" href="#">
-                <!--TODO: Font Awesome Icon Here -->
-                <i class="fas fa-headphones"></i>
-                Your Library
-            </a>
+            <form>
+                <label>Price Range: ($0-50000)</label>
+                <input type="range" id="price_range" name="price_range" min="0" max="50000"><br>
+
+                <label>Max Distance From school (0-100 miles):</label>
+                <input type="range" id="distnace" name="distance" min="0" max="100"><br><br>
+
+                <label>Type of Apartment:</label><br>
+                <input type="checkbox" id="req1" name="filter5" value="Furnished">
+                <label>Furnished</label><br>
+                <input type="checkbox" id="req2" name="filter5" value="New">
+                <label>New</label><br>
+                <input type="checkbox" id="req3" name="filter5" value="Used">
+                <label>Used</label><br><br><br>
+
+
+
+                <label>Apartment Ameneties:</label>
+                <br>
+                <input type="checkbox" id="filter1" name="filter1" value="Washers">
+                <label>Washers</label><br>
+                <input type="checkbox" id="filter2" name="filter2" value="Dryer">
+                <label>Dryer</label><br>
+                <input type="checkbox" id="filter3" name="filter3" value="Gym">
+                <label>Gym</label><br>
+                <input type="checkbox" id="filter4" name="filter4" value="Wifi">
+                <label>Wifi</label><br>
+                <input type="checkbox" id="filter5" name="filter5" value="Swimming Pool">
+                <label>Swimming Pool</label><br>
+                <input type="checkbox" id="filter6" name="filter6" value="Backyard">
+                <label>Backyard</label><br>
+                <input type="checkbox" id="filter7" name="filter7" value="No Smoking">
+                <label>No Smoking</label><br>
+                <input type="checkbox" id="filter8" name="filter8" value="Basement">
+                <label>Basement</label><br>
+                <input type="checkbox" id="filter9" name="filter9" value="Garage">
+                <label>Garage</label><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            
         </aside>
         <main>
             <header>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">University Housing</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()">
+                      <a href="">Northwestern University</a>
+                      <a href="">University of Chicago</a>
+                      <a href="">UIC</a>
+                      <a href="">UIUC</a>
+                      <a href="">Other</a>
+                    </div>
+                  </div>
+                  
                 <a href="#" id="profile">
                     <i class="far fa-user"></i> Profile</a>
             </header>
@@ -145,5 +243,25 @@
             </article>
         </main>
         <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+              txtValue = a[i].textContent || a[i].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a[i].style.display = "";
+              } else {
+                a[i].style.display = "none";
+              }
+            }
+          }</script>
     </body>
 </html>
