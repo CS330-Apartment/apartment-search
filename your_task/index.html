@@ -66,7 +66,7 @@
             .show {
                 display: block;
             }
-  
+
 
             /* Filters added from site */
             .filterDiv {
@@ -118,10 +118,16 @@
 
             <div id="myBtnContainer" style="color: blue" multiple>
 
-                <label><input type="checkbox" name="type" value="garage" onclick="filterSelection('garage')"><i></i>Garage</label>
-                <label><input type="checkbox" name="type" value="basement" onclick="filterSelection('basement')"><i></i>Basement</label>
-                <label><input type="checkbox" name="type" value="wifi" onclick="filterSelection('wifi')"><i></i>Wifi</label> 
+                <label><input type="checkbox" name="type" value="garage" ><i></i>Garage</label>
+                <label><input type="checkbox" name="type" value="basement" ><i></i>Basement</label>
+                <label><input type="checkbox" name="type" value="wifi" ><i></i>Wifi</label>
+                <label><input type="checkbox" name="type" value="washers" ><i></i>Washers</label>
+                <label><input type="checkbox" name="type" value="dryers" ><i></i>Dryers</label>
+                <label><input type="checkbox" name="type" value="gym" ><i></i>Gym</label>
+                <label><input type="checkbox" name="type" value="nosmoking" ><i></i>No Smoking</label>
+                <label><input type="checkbox" name="type" value="backyard" ><i></i>Backyard</label>
             </div>
+            <button type="button" onclick='filterSelection()'>Submit</button>
 
 
         </aside>
@@ -138,7 +144,7 @@
                       <a href="">Other</a>
                     </div>
                   </div>
-                  
+
                 <a href="#" id="profile">
                     <i class="far fa-user"></i> Profile</a>
             </header>
@@ -260,7 +266,7 @@
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
           }
-          
+
           function filterFunction() {
             var input, filter, ul, li, a, i;
             input = document.getElementById("myInput");
@@ -283,16 +289,59 @@
 
         <script>
         filterSelection("all")
-        function filterSelection(c) {
+        function filterSelection() {
+          // var x, i;
+          // x = document.getElementsByClassName("filterDiv");
+          // if (c == "all") c = "";
+          // // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+          // for (i = 0; i < x.length; i++) {
+          //   w3RemoveClass(x[i], "show");
+          //   if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          // }
+          let boxes = document.querySelectorAll('label input');
+          console.log(boxes);
+          let checkedBoxes = [];
+          for (box of boxes) {
+            if (box.checked == true){
+              checkedBoxes.push(box.value)
+            }
+          }
+          console.log(checkedBoxes);
+          filterHelper(checkedBoxes);
+        }
+
+        function filterHelper(a) {
           var x, i;
           x = document.getElementsByClassName("filterDiv");
-          if (c == "all") c = "";
-          // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-          for (i = 0; i < x.length; i++) {
+          if (a.length == 0){
+            console.log('Empty')
+            let c = ""
+            for (i = 0; i < x.length; i++) {
             w3RemoveClass(x[i], "show");
             if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }}
+
+          else{
+            console.log(a)
+            var j;
+            for (i = 0; i < x.length; i++){
+              w3RemoveClass(x[i], "show");
+              let tagCheck = true;
+              for (j = 0; j < a.length; j++){
+                if (x[i].className.indexOf(a[j]) == -1) {
+                  tagCheck = false;
+                  break
+                };
+              }
+              if(tagCheck) {
+                w3AddClass(x[i], "show");
+              }
+            }
           }
         }
+
+
+
 
         // Show filtered elements
         function w3AddClass(element, name) {
