@@ -118,6 +118,10 @@
               background-color: #666;
               color: white;
             }
+
+            .container_one div {
+              width: 48%;
+            }
         </style>
     </head>
     <body id="container">
@@ -129,15 +133,10 @@
             </h1>
 
             <div id="myBtnContainer" style="color: blue" multiple>
-
-                <label><input type="checkbox" name="type" value="garage" ><i></i>Garage</label>
-                <label><input type="checkbox" name="type" value="basement" ><i></i>Basement</label>
-                <label><input type="checkbox" name="type" value="wifi" ><i></i>Wifi</label>
-                <label><input type="checkbox" name="type" value="washers" ><i></i>Washers</label>
-                <label><input type="checkbox" name="type" value="dryers" ><i></i>Dryers</label>
-                <label><input type="checkbox" name="type" value="gym" ><i></i>Gym</label>
-                <label><input type="checkbox" name="type" value="nosmoking" ><i></i>No Smoking</label>
-                <label><input type="checkbox" name="type" value="backyard" ><i></i>Backyard</label>
+                <label><input type="checkbox" name="type" value="garage" ><i></i>Garage</label><br>
+                <label><input type="checkbox" name="type" value="wifi" ><i></i>Wifi</label><br>
+                <label><input type="checkbox" name="type" value="laundry" ><i></i>Laundry</label><br>
+                <label><input type="checkbox" name="type" value="gym" ><i></i>Gym</label><br>
             </div>
             <button type="button" onclick='filterSelection()'>Submit</button>
 
@@ -162,114 +161,118 @@
                 <a href="#" style="color: black; font-size: 16px;" class="selected">Available Listings:</a>
             </nav>
 
+            <div class="container_one">
+                
+              <div class="filterDiv garage wifi">
+                  <p>Contains: garage wifi</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+  
+
+          
+              <div class="filterDiv laundry gym">
+                  <p>Contains: laundry gym</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+  
+
+        
+              <div class="filterDiv gym">
+                  <p>Contains: gym</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+      
+
+          
+              <div class="filterDiv garage wifi laundry gym">
+                  <p>Contains: wifi garage gym laundry</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+     
+
+         
+              <div class="filterDiv laundry">
+                  <p>Contains: laundry</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+     
+
+          
+              <div class="filterDiv wifi laundry">
+                  <p>Contains: wifi laundry</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+         
+
+        
+              <div class="filterDiv garage gym">
+                  <p>Contains: garage gym </p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+  
+
+          
+              <div class="filterDiv garage laundry gym">
+                  <p>Contains: garage laundry gym</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
 
 
+         
+              <div class="filterDiv wifi laundry gym">
+                  <p>Contains: wifi laundry gym</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
+       
+
+         
+              <div class="filterDiv garage wifi laundry">
+                  <p>Contains: wifi laundry garage</p>
+                  <p>Address: 1987 Orrington Avenue</p>
+                  <p>Price: $1000/month</p>
+                  <p>Distance: 2.3 miles away</p>
+                  <p>Dates Available: 1/4/20 - 6/4/20</p>
+                  <p>Ratings: 4.7</p>
+              </div>
 
 
-
-            <article id="featured-content">
-                <section class="artist-card" style="background-color: green">
-                    <div class="filterDiv washers gym wifi">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card">
-                    <div class="filterDiv backyard nosmoking">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card">
-                    <div class="filterDiv backyard washers">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card" style="background-color: green">
-                    <div class="filterDiv basement garage wifi">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card" style="background-color: green">
-                    <div class="filterDiv wifi garage dryer">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card" style="background-color: green">
-                    <div class="filterDiv wifi">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card">
-                    <div class="filterDiv">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card" style="background-color: green">
-                    <div class="filterDiv wifi">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card">
-                    <div class="filterDiv">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-                <section class="artist-card">
-                    <div class="filterDiv">
-                        <p>Address: 1987 Orrington Avenue</p>
-                        <p>Price: $1000/month</p>
-                        <p>Distance: 2.3 miles away</p>
-                        <p>Dates Available: 1/4/20 - 6/4/20</p>
-                        <p>Ratings: 4.7</p>
-                    </div>
-                </section>
-
-
-            </article>
+            </div>
         </main>
         <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
         <script>
