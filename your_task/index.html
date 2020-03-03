@@ -120,7 +120,11 @@
             }
 
             .container_one div {
-              width: 48%;
+              width: 49.6%;
+              }
+
+            .container_one div p {
+              line-height: 10px;
             }
         </style>
     </head>
@@ -145,12 +149,13 @@
         <main>
             <header>
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">University Housing</button>
+                    <button onclick="myFunction()" class="dropbtn">Select your university:</button>
                     <div id="myDropdown" class="dropdown-content">
                       <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()">
                         <p style="color:black" onclick="myFunction2(this.innerText)">Northwestern University</p>
                         <p style="color:black" onclick="myFunction2(this.innerText)">University of Chicago</p>
                         <p style="color:black" onclick="myFunction2(this.innerText)">UIC</p>
+                        <p style="color:black" onclick="myFunction2(this.innerText)">Select your university:</p>
                     </div>
                   </div>
 

@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-aside, footer, header, nav, section, article {
+aside, header, nav, section, article {
     display: flex;
     flex-direction: column;
 }
@@ -31,7 +31,7 @@ main {
     background: white;
     grid-area: main;
     min-height: calc(350px);
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh);
     overflow-y: auto;
     z-index: 3;
 }
