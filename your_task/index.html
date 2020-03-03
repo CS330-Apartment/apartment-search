@@ -126,6 +126,80 @@
             .container_one div p {
               line-height: 10px;
             }
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+              background-color: #fefefe;
+              color: Black;
+              margin: 15% auto; /* 15% from the top and centered */
+              padding: 20px;
+              border: 1px solid #888;
+              width: 80%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+              color: #aaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+              color: black;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            /* Modal Header */
+            .modal-header {
+              padding: 2px 16px;
+              background-color: #5cb85c;
+              color: white;
+            }
+
+            /* Modal Body */
+            .modal-body {padding: 2px 16px;}
+
+            /* Modal Footer */
+            .modal-footer {
+              padding: 2px 16px;
+              background-color: #5cb85c;
+              color: white;
+            }
+
+            /* Modal Content */
+            .modal-content {
+              position: relative;
+              background-color: #fefefe;
+              margin: auto;
+              padding: 0;
+              border: 1px solid #888;
+              width: 80%;
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+              animation-name: animatetop;
+              animation-duration: 0.4s
+            }
+
+            /* Add Animation */
+            @keyframes animatetop {
+              from {top: -300px; opacity: 0}
+              to {top: 0; opacity: 1}
+            }
+
         </style>
     </head>
     <body id="container">
@@ -136,7 +210,7 @@
                 Housing101
             </h1>
 
-            <div id="myBtnContainer" style="color: blue" multiple>
+            <div id="myBtnContainer" style="color: white" multiple>
                 <label><input type="checkbox" name="type" value="garage" ><i></i>Garage</label><br>
                 <label><input type="checkbox" name="type" value="wifi" ><i></i>Wifi</label><br>
                 <label><input type="checkbox" name="type" value="laundry" ><i></i>Laundry</label><br>
@@ -158,17 +232,33 @@
                         <p style="color:black" onclick="myFunction2(this.innerText)">Select your university:</p>
                     </div>
                   </div>
-
-                <a href="#" id="profile">
-                    <i class="far fa-user"></i> Profile</a>
             </header>
             <nav>
                 <a href="#" style="color: black; font-size: 16px;" class="selected">Available Listings:</a>
             </nav>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
 
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2>1987 Orrington Avenue</h2>
+                </div>
+                <div class="modal-body">
+                  <p>For rent by Evanston Rental</p>
+                  <p id= 'commentZone'>Comments:</p>
+                </div>
+                <div class="modal-footer">
+                  <h3>Modal Footer</h3>
+                  <button onclick="addComment()">Add Comment</button>
+                </div>
+              </div>
+
+            </div>
             <div class="container_one">
-                
-              <div class="filterDiv garage wifi">
+
+              <div class="filterDiv garage wifi" id='card_1'>
                   <p>Contains: garage wifi</p>
                   <p>Address: 1987 Orrington Avenue</p>
                   <p>Price: $1000/month</p>
@@ -176,9 +266,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-  
 
-          
+
+
               <div class="filterDiv laundry gym">
                   <p>Contains: laundry gym</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -187,9 +277,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-  
 
-        
+
+
               <div class="filterDiv gym">
                   <p>Contains: gym</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -198,9 +288,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-      
 
-          
+
+
               <div class="filterDiv garage wifi laundry gym">
                   <p>Contains: wifi garage gym laundry</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -209,9 +299,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-     
 
-         
+
+
               <div class="filterDiv laundry">
                   <p>Contains: laundry</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -220,9 +310,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-     
 
-          
+
+
               <div class="filterDiv wifi laundry">
                   <p>Contains: wifi laundry</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -231,9 +321,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-         
 
-        
+
+
               <div class="filterDiv garage gym">
                   <p>Contains: garage gym </p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -242,9 +332,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-  
 
-          
+
+
               <div class="filterDiv garage laundry gym">
                   <p>Contains: garage laundry gym</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -255,7 +345,7 @@
               </div>
 
 
-         
+
               <div class="filterDiv wifi laundry gym">
                   <p>Contains: wifi laundry gym</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -264,9 +354,9 @@
                   <p>Dates Available: 1/4/20 - 6/4/20</p>
                   <p>Ratings: 4.7</p>
               </div>
-       
 
-         
+
+
               <div class="filterDiv garage wifi laundry">
                   <p>Contains: wifi laundry garage</p>
                   <p>Address: 1987 Orrington Avenue</p>
@@ -408,5 +498,46 @@
           console.log("Cool")
         }
               </script>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var card = document.getElementById("card_1");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        card.onclick = function() {
+          console.log("BLOCK")
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+        }
+        function addComment() {
+          var txt;
+          var myComment = prompt("Enter comment here:", "Comment...");
+          if (myComment == null || myComment == "") {
+            txt = "User cancelled the prompt.";
+          } else {
+            txt = '<br>' + myComment;
+          }
+          document.getElementById("commentZone").innerHTML += txt;
+        }
+      </script>
+
+
     </body>
 </html>
