@@ -36,5 +36,5 @@ https://github.com/CS330-Apartment
 #### A link to a working version of your prototype (or a video of it)
 https://github.com/CS330-Apartment/apartment-search
 #### Instructions for running your app (including how your prototype is best viewed).
-The prototype is best viewed using Google Chrome on Mac. To run the app and to test the prototype components, you first should first click the "Select your university" button and click one of the options listed. This will pop up and fill the listings page with the potential listings. For our first component click on the first listing
+The prototype is best viewed using Google Chrome on Mac. To run the app and to test the prototype components, you first should first click the "Select your university" button and click one of the options listed. This will pop up and fill the listings page with the potential listings. For our first component click on the first listing and it will pop up a modal. You can scroll through changes and add a comments. Afterwards you can filter the selections on the left side  by the amenities you want in your listings. Click submit and all the listings will be filtered.
 
