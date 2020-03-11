@@ -16,15 +16,25 @@ We found several key takeaways throughout our interview process. Currently, stud
 #### What directions you pursued based on what you learned (resolutions)
 ## High-Fidelity Prototyping
 #### A description of the tasks you decided to support. This should include screenshots of your app, with an explanation of how the various app features were intended to support the task.
+The first task is when someone wants to find off-campus housing for final two years of undergraduate and wants their apartment to have certain features.
+
+The second task occurs in the situation where after two years, the same person wants to give a fair review of place for future students.
+
+
+
+
 #### A description of your three components you chose to implement (2 for us since we only have 2 people)
+The two components that we chose to implement are the data filter selection and the social interactions comments section. For the data filter selection, we had a filter with checkboxes. The checkboxes that the users would check indicated the type of amenities that they wanted in their listings. The other component that we implemented was the social interactions component. For this components we added a modal for the user on the first listing. In the modal it included additional information of the listing and pictures as well as a place for comments from the user.
 ## Reflection
 #### What you managed to accomplish in the time you had
+We managed to get a simple working prototype of our idea. The website currrently filters options of listings and shows one modal that contains more information about the listing. On the modal it also includes a comments sections for users to post about the listing. There is also a somewhat representational version of another filter that will filter the listings by the university on the header. Overall the website works, is simple,  and has the 2 components working for the assignment.
 #### What the next steps of your app would be if you had more time
+If we had more time we would finish the additional filter for the universities. Afterwards we would imporve the listing cards aesthically. We would try to made the website look visually more friendly for users. 
 ## Links
 #### A link to your team’s repository
 https://github.com/CS330-Apartment
 #### A link to a working version of your prototype (or a video of it)
 https://github.com/CS330-Apartment/apartment-search
 #### Instructions for running your app (including how your prototype is best viewed).
-The prototype is best viewed using Google Chrome on Mac. To run the app and to test the prototype components, you first should first click 
+The prototype is best viewed using Google Chrome on Mac. To run the app and to test the prototype components, you first should first click the "Select your university" button and click one of the options listed. This will pop up and fill the listings page with the potential listings. For our first component click on the first listing
 
