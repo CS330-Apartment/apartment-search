@@ -10,3 +10,18 @@ From user research, we hoped to learn more about the process of searching for an
 Being undergraduate students ourselves, we had many potential users around us. We interviewed fellow Northwestern students to determine what features would be necessary for a student housing application. We asked them specifically about their experiences finding off campus housing. We wanted to know how people get information on available housing, what avenues students currently use, what problems or concerns people have with the apartment search process, and what apartment features people consider most when making housing decisions. We prepared a script of questions to ask potential users, and interviewed Northwestern students of all ages.
 #### What We Learned
 We found several key takeaways throughout our interview process. Currently, students want more available information on current listings, and a better, more centralized location to find this information. Most students we interviewed reported that they heard about apartments solely through word of mouth, which seemed strange to us with all of the online tools available. They also stressed that they would only use a solution that was easy to use and had a low time commitment. Some students reported finding their apartments by walking around town and looking for "For Rent" signs, wasting all of their time. Lastly, while the students we talked to sought different features in a living space, they all wanted the ability to sort available listings via features like cost, location, and available amenities.
+## Paper Prototyping
+#### A screenshot or embedded video clip of your paper prototype
+#### How your concept was received by testers, and and usability problems
+#### What directions you pursued based on what you learned (resolutions)
+## High-Fidelity Prototyping
+#### A description of the tasks you decided to support. This should include screenshots of your app, with an explanation of how the various app features were intended to support the task.
+#### A description of your three components you chose to implement (2 for us since we only have 2 people)
+## Reflection
+#### What you managed to accomplish in the time you had
+#### What the next steps of your app would be if you had more time
+## Links
+#### A link to your team’s repository
+#### A link to a working version of your prototype (or a video of it)
+#### Instructions for running your app (including how your prototype is best viewed).
+
