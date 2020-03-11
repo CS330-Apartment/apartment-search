@@ -22,6 +22,9 @@ We found several key takeaways throughout our interview process. Currently, stud
 #### What the next steps of your app would be if you had more time
 ## Links
 #### A link to your team’s repository
+https://github.com/CS330-Apartment
 #### A link to a working version of your prototype (or a video of it)
+https://github.com/CS330-Apartment/apartment-search
 #### Instructions for running your app (including how your prototype is best viewed).
+The prototype is best viewed using Google Chrome on Mac. To run the app and to test the prototype components, you first should first click 
 
