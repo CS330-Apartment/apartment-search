@@ -14,14 +14,21 @@ We found several key takeaways throughout our interview process. Currently, stud
 #### A screenshot or embedded video clip of your paper prototype
 #### How your concept was received by testers, and and usability problems
 #### What directions you pursued based on what you learned (resolutions)
+
 ## High-Fidelity Prototyping
 #### A description of the tasks you decided to support. This should include screenshots of your app, with an explanation of how the various app features were intended to support the task.
 The first task is when someone wants to find off-campus housing for final two years of undergraduate and wants their apartment to have certain features.
+
+
+To help implement this task we created a filter section on the right side of the website. To filter by amenities, the user would just need to check off the boxes and press the submit button. Afterwards, the listings page would filter based on the amenities.
+
+
 
 The second task occurs in the situation where after two years, the same person wants to give a fair review of place for future students.
 
 
 
+To implement this task, the app features we added was modal in the first listing card. When you click on the first listing a modal page will pop up and this provides extra information for the listing. These include who the listing is sold by as well as images of the listing. On the bottom section, we have the comment section for the second task. This is where it allows users to comment and give a fair review of the listing they previously used.
 
 #### A description of your three components you chose to implement (2 for us since we only have 2 people)
 The two components that we chose to implement are the data filter selection and the social interactions comments section. For the data filter selection, we had a filter with checkboxes. The checkboxes that the users would check indicated the type of amenities that they wanted in their listings. The other component that we implemented was the social interactions component. For this components we added a modal for the user on the first listing. In the modal it included additional information of the listing and pictures as well as a place for comments from the user.
@@ -35,6 +42,8 @@ If we had more time we would finish the additional filter for the universities. 
 https://github.com/CS330-Apartment
 #### A link to a working version of your prototype (or a video of it)
 https://github.com/CS330-Apartment/apartment-search
+
+
 #### Instructions for running your app (including how your prototype is best viewed).
 The prototype is best viewed using Google Chrome on Mac. To run the app and to test the prototype components, you first should first click the "Select your university" button and click one of the options listed. This will pop up and fill the listings page with the potential listings. For our first component click on the first listing and it will pop up a modal. You can scroll through changes and add a comments. Afterwards you can filter the selections on the left side  by the amenities you want in your listings. Click submit and all the listings will be filtered.
 
