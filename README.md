@@ -19,10 +19,12 @@ We found several key takeaways throughout our interview process. Currently, stud
 #### A description of the tasks you decided to support. This should include screenshots of your app, with an explanation of how the various app features were intended to support the task.
 The first task is when someone wants to find off-campus housing for final two years of undergraduate and wants their apartment to have certain features.
 
+![filter](filter.png)
 
 To help implement this task we created a filter section on the right side of the website. To filter by amenities, the user would just need to check off the boxes and press the submit button. Afterwards, the listings page would filter based on the amenities.
 
-
+![partone](partone.png)
+![parttwo](parttwo.png)
 
 The second task occurs in the situation where after two years, the same person wants to give a fair review of place for future students.
 
@@ -41,7 +43,7 @@ If we had more time we would finish the additional filter for the universities. 
 #### A link to your team’s repository
 https://github.com/CS330-Apartment
 #### A link to a working version of your prototype (or a video of it)
-https://github.com/CS330-Apartment/apartment-search
+
 
 
 #### Instructions for running your app (including how your prototype is best viewed).
