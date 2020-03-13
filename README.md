@@ -12,8 +12,14 @@ Being undergraduate students ourselves, we had many potential users around us. W
 We found several key takeaways throughout our interview process. Currently, students want more available information on current listings, and a better, more centralized location to find this information. Most students we interviewed reported that they heard about apartments solely through word of mouth, which seemed strange to us with all of the online tools available. They also stressed that they would only use a solution that was easy to use and had a low time commitment. Some students reported finding their apartments by walking around town and looking for "For Rent" signs, wasting all of their time. Lastly, while the students we talked to sought different features in a living space, they all wanted the ability to sort available listings via features like cost, location, and available amenities.
 ## Paper Prototyping
 #### A screenshot or embedded video clip of your paper prototype
+[![Paper Prototype](http://img.youtube.com/vi/KToKIlngCkc/0.jpg)](https://www.youtube.com/watch?v=KToKIlngCkc "Paper Prototype")
+
+Click the above photo to open video
 #### How your concept was received by testers, and and usability problems
+Testers reported that our initial UI was clean and easy to understand. They were able to complete the representative tasks with the paper prototype with almost no help. Testers especially liked the presentation of the apartment cards, the map, and the interface for the filters. Testers did not like how information was presented about apartments, specifically relating to what happens upon clicking an apartment card.
+
 #### What directions you pursued based on what you learned (resolutions)
+From paper prototype testing, we knew users responded well to our basic UI, so most of the features in the paper prototype ended up in our final website. The left-sidebar filter system worked well, so decided that would be one of our main components. The map, however, proved to be difficult to implement, and though users liked it, we went in another direction with the modal content. We addressed user concerns about the apartment information display with the modal window and included a social interaction component as well.
 
 ## High-Fidelity Prototyping
 #### A description of the tasks you decided to support. This should include screenshots of your app, with an explanation of how the various app features were intended to support the task.
@@ -38,7 +44,7 @@ The two components that we chose to implement are the data filter selection and 
 #### What you managed to accomplish in the time you had
 We managed to get a simple working prototype of our idea. The website currrently filters options of listings and shows one modal that contains more information about the listing. On the modal it also includes a comments sections for users to post about the listing. There is also a somewhat representational version of another filter that will filter the listings by the university on the header. Overall the website works, is simple,  and has the 2 components working for the assignment.
 #### What the next steps of your app would be if you had more time
-If we had more time we would finish the additional filter for the universities. Afterwards we would imporve the listing cards aesthically. We would try to made the website look visually more friendly for users. 
+If we had more time we would finish the additional filter for the universities. Afterwards we would imporve the listing cards aesthically. We would try to made the website look visually more friendly for users.
 ## Links
 #### A link to your team’s repository
 https://github.com/CS330-Apartment
@@ -48,4 +54,3 @@ https://github.com/CS330-Apartment
 
 #### Instructions for running your app (including how your prototype is best viewed).
 The prototype is best viewed using Google Chrome on Mac. To run the app and to test the prototype components, you first should first click the "Select your university" button and click one of the options listed. This will pop up and fill the listings page with the potential listings. For our first component click on the first listing and it will pop up a modal. You can scroll through changes and add a comments. Afterwards you can filter the selections on the left side  by the amenities you want in your listings. Click submit and all the listings will be filtered.
-
