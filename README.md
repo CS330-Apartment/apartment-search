@@ -49,7 +49,9 @@ If we had more time we would finish the additional filter for the universities. 
 #### A link to your team’s repository
 https://github.com/CS330-Apartment
 #### A link to a working version of your prototype (or a video of it)
+[![Housing101](http://img.youtube.com/vi/ZiSBbI2dRlE/0.jpg)](https://www.youtube.com/watch?v=ZiSBbI2dRlE "Housing101")
 
+Click the above photo to open video
 
 
 #### Instructions for running your app (including how your prototype is best viewed).
